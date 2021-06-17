@@ -16,7 +16,10 @@
 </head>
 <body>
     <header>
+        <!-- Code For Navbar -->
         <nav>
+            <!-- Navbar is made of two parts :- 1. Left  2. Right -->
+            <!-- Nav left contains image, page title and Favorites link -->
             <div id="nav-left">
                <div id="nav-img-title">
                 <div id="nav-img">
@@ -30,6 +33,7 @@
                     <a href="#">Favourites</a>
                 </div>
             </div>
+            <!-- Nav Right contains Search Bar, Notifications icon and user details -->
             <div id="nav-right">
                 <div id="search-bar">
                     <span class="material-icons">search</span>
@@ -48,9 +52,10 @@
             </div>
         </nav>
     </header>
+    <!-- Main Code starts Here -->
     <main>
         <!-- Code for Carousel -->
-
+        <!-- Carousel Contains 3 images which when hovered over scale up -->
         <section id="opening-carousel">
             <div id="ad-carousel" class="section">
                 <img src="2x\New-Release-Friday-April-Banner.jpg" alt="carousel1">
@@ -60,11 +65,15 @@
         </section>
 
         <!-- Code for Latest-Release Section -->
-
         <section id="latest-release">
+            <!-- Heading for Latest Release -->
             <div id="latest-release-heading" class="section-heading"><h2>Latest Release</h2></div>
+            <!-- Container for Latest Release -->
             <div id="latest-release-container" class="section">
+                <!-- Songs present inside latest release section -->
                 <div class="latest-release-song">
+                    <!-- Latest Release Song is made-up of two parts left and right -->
+                    <!-- Left Contains image and a div for hover effects including play button -->
                     <div class="latest-release-song-left">
                         <div class="latest-release-song-image">
                             <img src="2x/ngm.jpg" alt="Not Great Men">
@@ -72,11 +81,13 @@
                                 play_arrow
                                 </span></div>
                         </div>
+                        <!-- Artist Details part of the song -->
                         <div class="latest-release-song-artist-right">
                             <h4>Not Great Men</h4>
                             <p>Flea</p>
                         </div>
                     </div>
+                    <!-- Right Div Contains more options icon -->
                     <div class="latest-release-song-right">
                         <a href="#"><div class="latest-release-song-menu"><span class="material-icons">
                             more_horiz
@@ -182,8 +193,12 @@
         </section>
         <!-- Code for Pouplar artist -->
         <section id="popular-artists">
+            <!-- Heading For popular Artists -->
             <div id="popular-artists-heading" class="section-heading"><h2>Popular Artists</h2></div>
-                <div id="popular-artists-container" class="section"><a href="single.html">
+            <!-- Main Container which contains artists details -->
+                <div id="popular-artists-container" class="section">
+                <!-- Each artist div is a link to move to single artist details page    -->
+                    <a href="single.html"> <!--single html is single artist details page -->
                     <div class="artist-div" >
                         <img src="2x/incubus.jpg" alt="incubus">
                         <div class="artist-name">
@@ -191,6 +206,7 @@
                         </div>
                     </div></a>
                     <a href="single.html">
+                        <!-- Each Artist Div consists of image and artist name -->
                     <div class="artist-div">
                         <img src="2x/blink.jpg" alt="Blink">
                         <div class="artist-name">
@@ -227,15 +243,20 @@
                     </div></a>
                 </div>
         </section>
+        <!-- Code For different Genres -->
         <section id="genre">
+            <!-- Heading for Genres with an icon from Google fonts -->
             <div id="genre-heading" class="section-heading"><h3><span class="material-icons">
                 radio
                 </span>&nbsp;Stations</h3></div>
+            <!-- Main Container for individual Genre's -->
             <div id="genre-container" class="section">
+                <!-- Each individual div contains one genre name which is visible when hovered over the GIF image -->
                 <div class="individual-genre">
                     <div class="genre-div">
                         <div class="genre-img-div">
                             <img src="2x/Rock.gif" alt="Rock">
+                            <!-- Name div is visible when image is hovered over -->
                             <div class="genre-name-div"><div>ROCK</div></div>
                         </div>
                     </div>
@@ -274,13 +295,17 @@
                 </div>
             </div>
         </section>
+        <!-- Code for Playlists -->
         <section id="playlists">
+            <!-- Playlist Heading with icon from google fonts and a sentence in h5 -->
             <div id="playlist-heading" class="section-heading"><h3><span class="material-icons">
                 playlist_add_check
                 </span>&nbsp;Playlists</h3>
             <h5>Hear a Bit of Everything You Love</h5>
             </div>
+            <!-- Main Container for playlist -->
             <div id="playlist-container" class="section">
+                <!-- Three types are playlists are showcased hence three divs containing image, Image scales up inside the div when hovered to create effect -->
                 <div class="playlist-type">
                     <img src="2x/party.jpg" alt="Party">
                 </div>
@@ -292,9 +317,13 @@
                 </div>
             </div>
         </section>
+        <!-- Section for latest English -->
         <section id="latest-english">
+            <!-- Heading for Latest English -->
             <div id="latest-english-heading" class="section-heading"><h3>Latest English</h3></div>
+            <!-- main Container for Latest English -->
             <div id="latest-english-container" class="section">
+                <!-- class song-vertical is for individual song dets. Image with song and artist details aligned horizontally -->
                 <div class="song-vertical">
                     <img src="2x/ngm.jpg" alt="ngm">
                     <div class="vertical-song-name"><span>Not Great Men</span></div>
@@ -322,9 +351,13 @@
                 </div>
             </div>
         </section>
+        <!-- Section for latest Hindi -->
         <section id="latest-hindi">
+            <!-- Heading for Latest Hindi -->
             <div id="latest-hindi-heading" class="section-heading"><h3>Latest Hindi</h3></div>
+            <!-- main Container for Latest Hindi -->
             <div id="latest-hindi-container" class="section">
+                <!-- song-vertical is for individual song dets. Image with song and artist details aligned horizontally -->
                 <div class="song-vertical">
                     <img src="2x/ngm.jpg" alt="ngm">
                     <div class="vertical-song-name"><span>Not Great Men</span></div>
@@ -353,11 +386,17 @@
             </div>
         </section>
     </main>
+    <!-- Main Section Ends here -->
+    <!-- Code for Aside -->
     <aside>
+        <!-- Aside section in home page contains a queue with multiple songs -->
         <div id="queue-container">
+                <!-- Heading for queue -->
                 <h2>Queue</h2>
+                <!-- A drop down menu is created using checkbox with heading library -->
                 <input type="checkbox" id="dropdown-queue">
                 <label for="dropdown-queue"><h4>Library&nbsp;<span class="material-icons">featured_play_list</span></h4></label>
+                <!-- Items for Drop Down menu -->
                 <div class="dropdown-queue-items">
                     <a>Add to queue</a>
                     <a>Remove from queue</a><hr>
@@ -365,10 +404,13 @@
                     <a>Go to Album</a><hr>
                     <a>Share</a>
                 </div>
+                <!-- Container which consists of multiple songs in the queue -->
                 <div id="queue-items-container">
+                    <!-- code for individual queue items ie. song which consists of image, artist details and play button -->
                         <div class="queue-item">
                             <img src="2x/ngm.jpg" alt="Not Great Men">
                                 <div><h4>Not Great Men</h4> <h5>Flea</h5></div>
+                                <!-- play button triggers the music player in footer -->
                                 <a href="#footer"><span class="material-icons">
                                     play_circle_filled
                                     </span></a>
@@ -461,9 +503,12 @@
                 </div>
         </div>
     </aside>
+    <!-- Aside section ends here -->
+    <!-- Code for Footer -->
     <footer id="#footer">
-        <!-- Image and Artist -->
-        <div class="active-song-description">
+        <!-- Footer is made up of 3 parts 1. current song decription  2. Player controls and seeker  3. icons for extra options -->
+        <!-- 1st div contains Image and Artist dets with heart icon from font awesome-->
+        <div class="current-song-description">
             <div id="song-image">
                 <img src="2x/blink.jpg">
             </div>
@@ -481,7 +526,7 @@
                 </span>
             </div>
         </div>
-        <!--player controls -->
+        <!--  2nd div contains player controls -->
         <div class="player">
             <div class="controls">
                 <div><i class="fas fa-random"></i></div>
@@ -502,7 +547,7 @@
                 </div>
             </div>
         </div>
-        <!-- Player Side Buttons -->
+        <!-- 3rd div contains extra option icons -->
         <div class="extras">
             <div>
                 <i class="fas fa-list-ul"></i>
@@ -521,5 +566,6 @@
             </div>
         </div>
     </footer>
+    <!-- Code for footer ends here -->
 </body>
 </html>

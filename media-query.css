@@ -1,5 +1,6 @@
 @media  screen and (max-width: 1300px)
-{
+{   
+    /* mostly font size is adjusted to make the webiste look clean */
     body{
         font-size: 14px;
     }
@@ -16,7 +17,7 @@
         font-size: 14px;
     }
 
-    /* for queue dropdown heading */
+    /* for queue dropdown heading (library) on home page */
     aside h2{
         width: 60%;
     }
@@ -32,6 +33,8 @@
     body{
         font-size: 14px;
     }
+
+    /* main section is made to be 100% and aside section disappears post this point */
     main{
         width:100%;
     }
@@ -99,6 +102,7 @@
 }       
 
 @media  screen and (max-width: 750px) {
+    /* Font size of body and other elements is set as needed to make the website responsive */
     body{
         font-size: 12px;
     }
@@ -137,20 +141,8 @@
     .artist-name{
         font-size: 11.5px;
     }
-    
 
-    /* nav{
-        justify-content: left;
-    } */
-
-    /* #nav-left{
-        justify-content: left;
-    } */
-
-    #user-dets{
-        display: block;
-    }
-
+    /* Search bar and favs div is removed at this screen size */
     #search-bar{
         display: none;
     }

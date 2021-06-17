@@ -1,4 +1,6 @@
+/* ---------------------------------------------main------------------------------------------ */
 
+/* ---------------------------Artist details--------------------- */
 #single-artist{
     height:auto;
     width: 85%;
@@ -20,6 +22,7 @@
     min-height: 300px;
 }
 
+/* Artist image is added with gradient to make is partially transperent */
 #single-artist-img{
     /* display: inline-block; */
     height: 100%;
@@ -97,6 +100,10 @@
 /* #single-artist-listeners{
     line-height: .5rem;
 } */
+
+/* ---------------------------Artist details complete------------------------------- */
+
+/* ---------------------------Artist songs--------------------- */
 
 #single-artist-songs{
     width: 100%;
@@ -211,6 +218,8 @@
 	margin-left: 27%;
 }
 
+/* ---------------------------Single artist songs complete--------------------- */
+
 /* --------------------------------------Aside---------------------------------------------- */
 aside{
     display: inline-block;
@@ -235,6 +244,10 @@ aside{
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
     border-radius: 10px;
+}
+
+#similar-artists-heading{
+    color: #e68d79;
 }
 
 .similar{
@@ -264,6 +277,8 @@ aside{
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
 }
 
+/* ---------------------------Similar artists complete--------------------- */
+
 /* ---------------------------Recently Played--------------------- */
 
 
@@ -273,6 +288,10 @@ aside{
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
     border-radius: 10px;
+}
+
+#similar-artists-recent{
+    color: #e68d79;    
 }
 
 .recent-song{
@@ -294,6 +313,7 @@ aside{
 }
 
 .recent-song span{
+    color:#67b8a2;
     font-size: 2rem;
     transition: .2s ease-in-out;
 }
@@ -303,9 +323,13 @@ aside{
 }
 
 .recent-song span:hover{
+    color:#e68d79;
     font-size: 2.15rem;
 }
 
 .recent-song h5{
     color: #e68d79;
 }
+
+/* ---------------------------Recently Played complete--------------------- */
+/* -----------------------------------------Aside complete------------------------------------------------ */

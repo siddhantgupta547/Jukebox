@@ -17,14 +17,18 @@
 </head>
 <body>
     <header>
+        <!-- Same Navbar that is used in the home page -->
         <nav>
+            <!-- Consists of left and right 
+            1. Left contains image, site title and favorites link
+            2. Right contains search bar, notification icon and user dets -->
             <div id="nav-left">
                <div id="nav-img-title">
                 <div id="nav-img">
                     <a href="index.html"><img src="2x/giphy.gif" alt="Jukebox-Icon"></a>
                 </div>
                 <div id="nav-title">
-                    <a href="#" id="nav-name">JukeBox</a>
+                    <a href="index.html" id="nav-name">JukeBox</a>
                 </div>
                </div>
                 <div id="favs">
@@ -49,17 +53,21 @@
             </div>
         </nav>
     </header>
+    <!-- Code for main starts here -->
     <main>
+        <!-- main consists of single artist dets and songs by that artist -->
         <div id="single-artist">
             <div id="single-artist-dets">
+                <!-- Image is added using background image property of CSS -->
                 <div id="single-artist-img">
-                    <!-- <img src="2x/babymetal-twitter.jpg"> -->
                 </div>
+                <!-- Following div contains desc of artist with Name and number of monthly listeners -->
                 <div id="single-artist-desc">
                     <div id="single-artist-name-type-listeners">
                         <div id="single-artist-name"><h1>BabyMetal</h1><h5>Alternative Rock</h5></div>
                         <div id="single-artist-listeners"><h4>909,898 Listeners</h4></div>
                         <p>Babymetal (Japanese: ベビーメタル, Hepburn: Bebīmetaru) (stylized in all caps) is a Japanese kawaii metal band. The band consists of Suzuka Nakamoto as "Su-metal" (Vocal and Dance) and Moa Kikuchi as "Moametal" (Scream and Dance). The band is produced by Kobametal from the Amuse talent agency. Their vocals are backed by heavy metal instrumentation, performed by a group of session musicians known as the "Kami Band" at performances. </p>
+                        <!-- play button and follow button -->
                         <a href="#footer"><span class="material-icons">
                             play_circle_filled
                             </span></a>
@@ -67,7 +75,13 @@
                     </div>
                 </div>
             </div>
+            <!-- code for All the songs by artist is written from here -->
             <div id="single-artist-songs">
+                <!-- Main container for all the song elements -->
+                <!-- Each song element consists of 3 popular-artists :-
+                1. Left which has song number, thumbnail and artist, song details.
+                2. Center which contains the lenght of the song.
+                3. Right which contains like and add to queue icon from font awesome. -->
                 <div class="single-artist-single">
                     <div class="playlist-item">
                         <div class="left">
@@ -411,9 +425,13 @@
             </div>
         </div>
     </main>
+    <!-- Code for Main section ends here -->
+    <!-- Aside contains two parts 1. Similar artists  2. Recently played songs-->
     <aside>
         <div id="single-artists-aside">
+            <!-- Similar artist Aside section heading -->
             <div id="similar-artists-heading"><h3>Similar Artists</h3></div>
+            <!-- Each div contains one image and artist details with their genre details -->
             <div id="similar-artists">
                 <div class="similar">
                     <div class="artist-div">
@@ -446,7 +464,10 @@
                     </div>
                 </div>
             </div>
+            <!-- Recently Played section's code starts here -->
+            <!-- Recently played heading -->
             <div id="similar-artists-recent"><h3>Recently Played</h3></div>
+            <!-- Each song dic has image, song and artist dets and a play button which makes the player visisble -->
             <div id="recently-played">
                 <div class="recent-song">
                     <img src="2x/blink.jpg" alt="Blink">
@@ -493,9 +514,12 @@
             </div>
         </div>
     </aside>
-    <footer id="footer">
-        <!-- Image and Artist -->
-        <div class="active-song-description">
+    <!-- Aside section ends here -->
+    <!-- Code for Footer -->
+    <footer id="#footer">
+        <!-- Footer is made up of 3 parts 1. current song decription  2. Player controls and seeker  3. icons for extra options -->
+        <!-- 1st div contains Image and Artist dets with heart icon from font awesome-->
+        <div class="current-song-description">
             <div id="song-image">
                 <img src="2x/blink.jpg">
             </div>
@@ -507,13 +531,13 @@
                     Blink-182
                 </div>
             </div>
-            <div class="heart-and-ban-icon">
+            <div class="heart-icon">
                 <span>
                     <i class="far fa-heart"></i>
                 </span>
             </div>
         </div>
-        <!--player controls -->
+        <!--  2nd div contains player controls -->
         <div class="player">
             <div class="controls">
                 <div><i class="fas fa-random"></i></div>
@@ -534,7 +558,7 @@
                 </div>
             </div>
         </div>
-        <!-- Player Side Buttons -->
+        <!-- 3rd div contains extra option icons -->
         <div class="extras">
             <div>
                 <i class="fas fa-list-ul"></i>
@@ -553,5 +577,6 @@
             </div>
         </div>
     </footer>
+    <!-- Code for footer ends here -->
 </body>
 </html>

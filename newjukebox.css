@@ -9,6 +9,7 @@ body{
     position: relative;
 }
 
+/*----------------Common/reused classes-------------------------*/
 .section{
     width:90%;
     margin:auto;
@@ -28,6 +29,7 @@ body{
 
 /* ----------------------------------Animations-------------------------------------------------- */
 
+/* this is for the notification bell in nav bar */
 @keyframes notification-bell{
     0% {
 		transform: rotate(-25deg);
@@ -112,6 +114,7 @@ nav{
     width: 30vw;
 }
 
+/* Search bar div contains search icon, input type "text" and voice search */
 #search-bar{
     display: flex;
     flex-direction: row;
@@ -151,21 +154,24 @@ nav{
 
 /* ----------------------------------Main-------------------------------------------------- */
 
+/* main is set as inline blok and width has been set to make space for aside */
 main{
     width:71%;
     display: inline-block;
     overflow-y: scroll;
     height: 85vh;
     /* width: 233vh; */
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; /* to hide scroll bar Firefox */
     -ms-overflow-style: none;
 }
 
+/* to hide scroll bar in chrome */
 ::-webkit-scrollbar { /* WebKit */
     width: 0;
     height: 0;
 }
 
+/* main container for carousel */
 #ad-carousel{
     min-height: 90px;
     margin-bottom: 20px;
@@ -174,6 +180,7 @@ main{
     position: relative;
 }
 
+/* height and width of carousel images and increment when they are hovered over */
 #opening-carousel img{
     height: 26vh;
     width: 34.5vw;
@@ -187,6 +194,7 @@ main{
     width: 36vw;
 }
 
+/* Positioning of all the images in carousel, each is set to absolute and is placed in the middle with a little box shadow */
 #opening-carousel img:nth-child(1){
     z-index: 3;
     left:38.5%;
@@ -204,6 +212,7 @@ main{
     position:absolute;
 }
 
+/* Z-index is increased when images are hovered to make them move over the other */
 #opening-carousel img:nth-child(3):hover{
     z-index:7;
 }
@@ -262,6 +271,7 @@ main{
     width: 60%;
 }
 
+/* to change the color of the artitst name */
 .latest-release-song-left p{
     margin-top:-24%;
     color: #e68d79;
@@ -297,6 +307,10 @@ main{
     opacity: 0.6;
 }
 
+/* to change the color and padding of the more options icon */
+.latest-release-song-right a{
+    color:#eaf1bc;
+}
 .latest-release-song-right{
     padding: 1% 3% 1% 0;
 }
@@ -327,6 +341,7 @@ main{
     text-shadow: 0 1px 0 #000;
 }
 
+/* To make the a tags in artist which tranfers to single artist look like normal text on the page styles have been added */
 #popular-artists-container a{
     text-decoration: none;
     color: #eaf1bc;
@@ -404,10 +419,12 @@ main{
 
 }
 
+/* To increase opacity when mouse is hovered over the image */
 .genre-name-div:hover{
     opacity: .6;
 }
 
+/* To place the div above image in the center as it contains name of the genre*/
 .genre-name-div > div{
     width: 100%;
     position: absolute;
@@ -456,10 +473,12 @@ main{
     min-width: 70px;
 }
 
+/* contains transition settings */
 .playlist-type img{
     transition: transform .5s ease;
 }
 
+/* to give the scale up effect on images while keeping the div fof same size */
 .playlist-type:hover img {
     transform: scale(1.2);
 }
@@ -482,6 +501,7 @@ main{
     box-sizing: border-box;
 }
 
+/* song elements Styles in both latest hindi and latest english sections */
 .song-vertical{
     min-height: 100px;
     min-width: 25px;
@@ -495,6 +515,7 @@ main{
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
 }
 
+/* Hover effects to show white box shadow around the image */
 .song-vertical img:hover{
     opacity: .8;
     box-shadow: 0px 2px 3px 2px white;
@@ -549,6 +570,7 @@ aside{
     min-width: 200px;
 }
 
+/* Aside queue heading */
 aside h2{
     color: #e68d79;
     display: inline-block;
@@ -557,6 +579,7 @@ aside h2{
     padding: 2% 4% 0% 2%;
 }
 
+/* Button/label for drop down menu */
 label h4{
     box-sizing: border-box;
     color: #e68d79;
@@ -571,6 +594,7 @@ label span{
     top: .5vh;
 }
 
+/* by default drop down is hidden */
 #dropdown-queue{
     display: none;
 }
@@ -603,6 +627,7 @@ input[type="checkbox"]:checked ~.dropdown-queue-items {
     transform: scale(1);
 }
 
+/* Main queue container */
 #queue-items-container{
     display: flex;
     flex-direction: column;
@@ -616,6 +641,7 @@ input[type="checkbox"]:checked ~.dropdown-queue-items {
     min-width: 200px;
 }
 
+/* All the items for queue */
 .queue-item{
     display: flex;
     flex-wrap: wrap;
@@ -662,6 +688,7 @@ input[type="checkbox"]:checked ~.dropdown-queue-items {
     color: #e68d79;
 }
 
+/* ----------------------------------Aside complete--------------------------------------------- */
 
 /* ------------------------------------------------Footer--------------------------------------------- */
 
@@ -681,7 +708,8 @@ footer {
 }
 
 /* footer is divided into 3 parts: 1. desc 2. controls 3. extras*/
-.active-song-description {
+/* Styles for first part */
+.current-song-description {
 	height: 90%;
 	width: 25%;
 	display: flex;
@@ -722,7 +750,7 @@ footer {
 	font-size: 12px;
 }
 
-
+/* All the styles for player (2nd part) */
 .player {
 	width: 45%;
 	display: flex;
@@ -761,6 +789,7 @@ footer {
 	width: 100%;
 }
 
+/* Styles for Slider */
 .slider {
 	-webkit-appearance: none;
 	width: 100%;
@@ -782,18 +811,18 @@ footer {
 	width: 17px;
 	height: 17px;
 	border-radius: 50%;
-	background: #007bff;
+	background: #e68d79;
 	cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-	width: 25px;
-	height: 25px;
-	background: #4caf50;
+	width: 15px;
+	height: 15px;
+	background: #e68d79;
 	cursor: pointer;
 }
 
-
+/* Styles for extra button of music player (3rd part) */
 .extras {
 	width: 20%;
 	display: flex;
@@ -801,3 +830,5 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 }
+
+/* ----------------------------------Footer complete--------------------------------------------- */
